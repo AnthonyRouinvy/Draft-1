@@ -5,15 +5,55 @@
 
 ## Procédure pour ajouter un serveur
 
+**Apache2**
+
+```sh
+cd /etc/apache2/sites-available
+vim wikidocs.com.conf
+cd ../sites-enabled
+ln -s ../sites-available/wikidocs.com.conf .
+apache2ctl graceful
+```
+
+
+**Hosts**
+
+```sh
+sudo vim /etc/hosts
+127.0.0.1       wikidocs.com www.wikidocs.com
+```
+
+
+**Windows**
+NotePad++ C:\Windows\System32\drivers\etc\hosts
+
+```sh
+127.0.0.1 wikidocs.com www.wikidocs.com
+```
+
+
+**VirtuaBox**
+Clic droit sur la machine virtuelle, Configuration, Réseau, Avancé, Redirection de ports
+
+```sh
+Nom: UbuntuMate
+Protocole: TCP
+IP hôte: 127.0.0.1
+Port hôte: 80
+IP invité: 10.0.2.15
+Port invité: 80
+```
+
+
 ## Configuration VirtualBox et Windows
 
 ## Mes conf
 
-Voici le contenu pour mes fichiers Apache2
+Voici le contenu pour mes fichiers Apache2 de sites-available
 
 
 ```sh
-$ cd /etc/apache2/sites-availables
+$ cd /etc/apache2/sites-available
 $ ls -1
 000-default.conf
 conceptqai.com.conf
@@ -90,7 +130,18 @@ wikidocs.com.conf
 </VirtualHost>
 ```
 
-Contenu de la page défaut Apache 000-default.conf
+**Contenu de la page défaut Apache 000-default.conf**
 
+
+```sh
 <VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
 
+
+	
+	
