@@ -62,14 +62,15 @@ Etapes à suivre pour la configuration d'Apache sans quoi le site s'affichera sa
 
 ```
 cd /etc/apache2/sites-available
-vim docs.wiki.conf
+vim wikidocs.com.conf
 ```
 
 
 ```apache_conf
-<VirtualHost *:80>
+ <VirtualHost *:80>
     ServerAdmin arouinvy@docs.wiki
-    ServerName docs.wiki
+    ServerName wikidocs.com
+    ServerAlias www.wikidocs.com
     ProxyPreserveHost On
 
     # setup the proxy
@@ -84,18 +85,25 @@ vim docs.wiki.conf
 
 ```
 cd ../sites-enabled
-ln -s ../sites-available/docs.wiki.conf .
+ln -s ../sites-available/wikidocs.com.conf .
 apache2ctl graceful
 ```
 
 ### Configurer hosts
 
+**Sur Ubuntu**
 
 ```sh
 sudo vim /etc/hosts
-127.0.0.1	docs.wiki
+127.0.0.1       wikidocs.com www.wikidocs.com
 ```
 
+**Sur Windows**
+
+```sh
+NotePad++ C:\Windows\System32\drivers\etc\hosts
+127.0.0.1 wikidocs.com www.wikidocs.com
+```
 
 ### Démarrer / arrêter
 
@@ -120,6 +128,35 @@ node wiki stop
 ```
  
 ` chmod +x launch.sh`
+
+
+### Changement de domaine
+
+Si on souhaite changer le nom du domaine, il faudra refaire les étapes et modifier le fichier du répertoire Wikidocs
+
+```sh
+vim config.yml
+host: 'http://wikidocs.com'
+port: 8084
+```
+
+
+Pour info, dans la partie Git j'avais ajouté, mais cela n'a pas servi
+
+```yaml
+git:
+  url: 'https://github.com/AnthonyRouinvy/wikidocs.git'
+  branch: master
+  auth:
+    type: basic
+    username: arouinvy@gmail.com
+    password: FDjksdDjhzmex9TJa2sm
+    privateKey: ''
+    sslVerify: true
+  showUserEmail: true
+  serverEmail: arouinvy@gmail.com
+```
+
 
 
 
