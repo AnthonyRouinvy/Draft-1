@@ -21,7 +21,7 @@ Si une erreur se produit, on peut reconfigurer
 dpkg-reconfigure phpmyadmin
 ```
 
-## Issues
+# Issues
 
 ### Access denied
 
