@@ -29,4 +29,13 @@ Message d'erreur dans PHPMyAdmin au bas de la page, cela n'empêche pas de voir 
 
 > mysqli_real_connect(): (HY000/1045): Access denied for user 'phpmyadmin'@'localhost' (using password: YES)
 
-mysql> GRANT ALL PRIVILEGES ON *.* TO phpmyadmin@localhost  IDENTIFIED BY ' CieEegle17 ' WITH GRANT OPTION;
+Changer dbuser "phpmyadmin" par "root", pas besoin de redémarrer.
+
+
+```sh
+vim /etc/phpmyadmin/config-db.php
+```
+
+
+
+
