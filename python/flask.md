@@ -54,3 +54,24 @@ Rechercher un package
 pip search package
 ```
 
+## Issue
+
+### Flask-MySQLDB
+
+L'installation pose problème, voici les étapes dans le terminal. Ne pas oublier d'ajouter les pip dans `requirements.txt`.
+
+
+```sh
+ sudo apt-get install python3-mysqldb 
+ sudo apt-get install python3-dev
+ pip install mysql
+ pip install mysqlclient
+ pip install flask-mysqldb
+ pip show flask-mysqldb
+```
+
+ 
+ 
+
+
+
