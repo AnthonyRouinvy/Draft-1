@@ -36,3 +36,13 @@ mysql> CREATE TABLE User(
 mysql> insert into User values('','Admin','admin');
 ```
 
+**Modifier le mot de passe**
+
+
+```mysql
+mysql> SET PASSWORD FOR root@localhost=PASSWORD(' monmotdepasse ');
+mysql> GRANT ALL PRIVILEGES ON *.* TO root@localhost  IDENTIFIED BY ' CieEegle17 ' WITH GRANT OPTION;
+```
+
+
+
