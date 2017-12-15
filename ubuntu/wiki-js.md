@@ -15,8 +15,10 @@ cd Wikidocs
 ```
 
 Apres install
+´´´
 chown -R anthonyr: .
 node wiki configure
+´´´
 
 Repository url
 https://github.com/AnthonyRouinvy/wiki.git
