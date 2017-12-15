@@ -42,7 +42,7 @@ git push -u origin master
 ```
 Si on ne pousse pas un fichier dans le master, on aura l'erreur
 
-> > error: src refspec master does not match any.
+> error: src refspec master does not match any.
  
 Relancer la configuration et voir si l'étape du Git passe
 
