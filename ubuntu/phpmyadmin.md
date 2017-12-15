@@ -21,9 +21,11 @@ Si une erreur se produit, on peut reconfigurer
 dpkg-reconfigure phpmyadmin
 ```
 
+
 # Issues
 
-### Access denied
+
+## Access denied
 
 Message d'erreur dans PHPMyAdmin au bas de la page, cela n'empêche pas de voir les tables.
 
