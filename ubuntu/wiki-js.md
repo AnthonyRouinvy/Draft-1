@@ -6,13 +6,13 @@
 L'installation ne s'est pas fait sans problème, il est conseillé de lire leur documentation et bien faire attention aux conseils.
 
 ### Pre-required
-´´´
+```
 sudo apt-get install yarn
 sudo apt-get install mongodb
 cd
 mkdir Wikidocs
 cd Wikidocs
-´´´
+```
 
 Apres install
 chown -R anthonyr: .
