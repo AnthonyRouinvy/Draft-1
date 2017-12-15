@@ -20,3 +20,13 @@ Si une erreur se produit, on peut reconfigurer
 ```sh
 dpkg-reconfigure phpmyadmin
 ```
+
+## Issues
+
+### Access denied
+
+Message d'erreur dans PHPMyAdmin au bas de la page, cela n'empêche pas de voir les tables.
+
+> mysqli_real_connect(): (HY000/1045): Access denied for user 'phpmyadmin'@'localhost' (using password: YES)
+
+mysql> GRANT ALL PRIVILEGES ON *.* TO phpmyadmin@localhost  IDENTIFIED BY ' CieEegle17 ' WITH GRANT OPTION;
