@@ -6,13 +6,25 @@
 L'installation ne s'est pas fait sans problème, il est conseillé de lire leur documentation et bien faire attention aux conseils.
 
 ### Pre-required
-```
+
+
+```sh
 sudo apt-get install yarn
 sudo apt-get install mongodb
-cd
+sudo apt-get install nodejs
+```
+
+
+### Download & configure
+
+
+```sh
 mkdir Wikidocs
 cd Wikidocs
+sudo curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 ```
+
+
 
 Apres install
 ```
