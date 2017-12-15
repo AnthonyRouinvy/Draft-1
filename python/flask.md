@@ -17,7 +17,11 @@ FLASK_APP=flask_mysql.py FLASK_DEBUG=1 python -m flask run --port=8082
 
 **Installer des packages**
 L'installation de packages passe par pip, ne pas oublier de rajouter le package dans requirements.txt
+
+```sh
 pip install Flask-SQLAlchemy
+```
+
 
 Exempe de fichier requirements.txt
 
