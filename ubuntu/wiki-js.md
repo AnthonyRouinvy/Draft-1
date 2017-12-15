@@ -56,7 +56,46 @@ Relancer la configuration et voir si l'étape du Git passe
 
 Il y a un petit décalage entre le moment où l'on créé un article et celui où il est poussé. On peut voir sur Gitkraken que les fichiers sont en premier poussés en staging, puis après commités.
 
+### Configurer Apache2
+
+Etapes à suivre pour la configuration d'Apache sans quoi le site s'affichera sans charger les JS/CSS.
+
+`cd /etc/apache2/sites-available
+vim docs.wiki.conf`
+
+
+```apache_conf
+<VirtualHost *:80>
+    ServerAdmin arouinvy@docs.wiki
+    ServerName docs.wiki
+    ProxyPreserveHost On
+
+    # setup the proxy
+    <Proxy *>
+        Order allow,deny
+        Allow from all
+    </Proxy>
+    ProxyPass / http://localhost:8084/
+    ProxyPassReverse / http://localhost:8084/
+</VirtualHost>
+```
+
+`cd ../sites-enabled
+ln -s ../sites-available/docs.wiki.conf .
+apache2ctl graceful`
+
+### Configurer hosts
+
+
+```sh
+sudo vim /etc/hosts
+127.0.0.1	docs.wiki
+```
+
+
 ### Démarrer / arrêter
+
+Se déplacer dans le répertoire de Wikidocs
 
 ```sh
 node wiki start
