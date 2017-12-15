@@ -36,6 +36,5 @@ PS1="[\e[01;32m\u\e[01;34m@\h\e[00m:\e[01;34m$(pwd)\e[00m]\n\$ "
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # Comment if user
-> Important: durant l'installation, faire attention de bien cocher Apache2 en serveur
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 ```
