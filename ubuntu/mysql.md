@@ -16,3 +16,23 @@ mysql> show tables;
 mysql> describe users;
 mysql> SELECT * FROM users;
 ```
+
+### Créer une table
+
+
+```mysql
+mysql> CREATE TABLE User(
+ userId INT NOT NULL AUTO_INCREMENT,
+ userName VARCHAR(100) NOT NULL,
+ password VARCHAR(40) NOT NULL,
+ PRIMARY KEY(userId)
+ );
+```
+
+### Insére dans une table
+
+
+```mysql
+mysql> insert into User values('','Admin','admin');
+```
+
