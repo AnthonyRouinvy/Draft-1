@@ -4,10 +4,9 @@
 # Bashrc
 Un shell interactif de connexion est lancé après une identification positive avec /bin/login en lisant le fichier /etc/passwd. Un shell interactif, sans login, est lancé à la ligne de commande (c'est-à-dire [prompt]$/bin/bash). Un shell non-interactif est présent habituellement lorsqu'un script shell tourne. Il est non interactif parce qu'il exécute un script et n'attend pas d'entrée utilisateur entre les commandes.
 
-Le fichier `~/.bashrc` est lu quand le shell est invoqué comme shell interactif sans fonction de connexion.
+Le fichier `~/.bashrc` est lu quand le shell est invoqué comme shell interactif sans fonction de connexion. Une fois le fichier modifié relancer l'évaluation avec `source ~/.bashrc`
 
 ```sh
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -37,4 +36,16 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 
 # Comment if user
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+```
+
+Si on a besoin de faire un branchement root/user
+
+
+```sh
+if [ $(id -u) -eq 0 ];
+then # you are root, make the prompt red
+        # Code to execute as root
+else
+        # Code to execute as user
+fi
 ```
