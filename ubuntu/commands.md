@@ -4,6 +4,16 @@
 # Commandes Linux
 Classées par ordre alphabétique
 
+## Netstat
+
+Lister les ports en écoute sur 80
+
+```sh
+netstat -paunt | grep 80
+sudo chown anthonyr:anthonyr -R .^
+```
+
+
 ## NPM
 https://www.npmjs.com/
 
