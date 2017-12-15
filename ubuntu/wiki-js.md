@@ -60,8 +60,10 @@ Il y a un petit décalage entre le moment où l'on créé un article et celui o�
 
 Etapes à suivre pour la configuration d'Apache sans quoi le site s'affichera sans charger les JS/CSS.
 
-```cd /etc/apache2/sites-available
-vim docs.wiki.conf```
+```
+cd /etc/apache2/sites-available
+vim docs.wiki.conf
+```
 
 
 ```apache_conf
@@ -80,9 +82,11 @@ vim docs.wiki.conf```
 </VirtualHost>
 ```
 
-```cd ../sites-enabled
+```
+cd ../sites-enabled
 ln -s ../sites-available/docs.wiki.conf .
-apache2ctl graceful```
+apache2ctl graceful
+```
 
 ### Configurer hosts
 
