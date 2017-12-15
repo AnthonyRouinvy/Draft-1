@@ -4,7 +4,13 @@
 # Bashrc
 Un shell interactif de connexion est lancé après une identification positive avec /bin/login en lisant le fichier /etc/passwd. Un shell interactif, sans login, est lancé à la ligne de commande (c'est-à-dire [prompt]$/bin/bash). Un shell non-interactif est présent habituellement lorsqu'un script shell tourne. Il est non interactif parce qu'il exécute un script et n'attend pas d'entrée utilisateur entre les commandes.
 
-Le fichier `~/.bashrc` est lu quand le shell est invoqué comme shell interactif sans fonction de connexion. Une fois le fichier modifié relancer l'évaluation avec `source ~/.bashrc`
+Une fois le fichier modifié relancer l'évaluation avec 
+
+```sh
+source ~/.bashrc
+```
+
+Le fichier `~/.bashrc` est lu quand le shell est invoqué comme shell interactif sans fonction de connexion. 
 
 ```sh
 # enable color support of ls and also add handy aliases
