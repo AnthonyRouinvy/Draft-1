@@ -38,3 +38,19 @@ Pour installer les packages du fichier `requirements.txt`
 ```sh
 pip install -r requirements.txt 
 ```
+
+Pour savoir si un package est installé
+
+
+```sh
+pip show package
+```
+
+
+Rechercher un package
+
+
+```sh
+pip search package
+```
+
