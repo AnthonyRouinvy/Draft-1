@@ -4,6 +4,8 @@
 # Hosts
 C:\Windows\System32\drivers\etc\hosts
 
+Il faut passer par Notepad++ pour l'éditer car ce fichier est protégé. Le logiciel va gérer automatiquement l'ouverture avec des droits Administrateur.
+
 
 ```sh
 127.0.0.1 conceptqai.com www.conceptqai.com
