@@ -7,7 +7,6 @@ Principales commandes
 
 ```mysql
 mysql --user=root -p
-mysql
 mysql> show databases;
 mysql> show tables;
 mysql> create database flask_mysql;
