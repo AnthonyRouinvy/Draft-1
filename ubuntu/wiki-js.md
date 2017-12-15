@@ -22,5 +22,5 @@ node wiki configure
 
 Repository url
 https://github.com/AnthonyRouinvy/wiki.git
-Authentication choisir Basic avec mes identifiants Github
+Authentication choisir `Basic` avec mes identifiants Github
 Cocher commit using user email
