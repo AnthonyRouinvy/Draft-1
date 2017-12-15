@@ -17,7 +17,7 @@ mysql> describe users;
 mysql> SELECT * FROM users;
 ```
 
-### Créer une table
+**Créer une table**
 
 
 ```mysql
@@ -29,7 +29,7 @@ mysql> CREATE TABLE User(
  );
 ```
 
-### Insére dans une table
+**Insére dans une table**
 
 
 ```mysql
