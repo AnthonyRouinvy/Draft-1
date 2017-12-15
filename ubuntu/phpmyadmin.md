@@ -19,9 +19,9 @@ Si une erreur se produit, on peut reconfigurer
 
 ```sh
 dpkg-reconfigure phpmyadmin
-```
+```  
 
-
+  
 # Issues
 
 
