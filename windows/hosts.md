@@ -2,7 +2,7 @@
 <!-- SUBTITLE: A quick summary of Hosts -->
 
 # Hosts
-C:\Windows\System32\drivers\etc\hosts
+`C:\Windows\System32\drivers\etc\hosts`
 
 Il faut passer par Notepad++ pour l'éditer car ce fichier est protégé. Le logiciel va gérer automatiquement l'ouverture avec des droits Administrateur.
 
