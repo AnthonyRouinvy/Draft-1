@@ -24,6 +24,8 @@ sudo vim /etc/hosts
 ```
 
 
+## Configuration VirtualBox et Windows
+
 **Windows**
 NotePad++ C:\Windows\System32\drivers\etc\hosts
 
@@ -43,9 +45,6 @@ Port hôte: 80
 IP invité: 10.0.2.15
 Port invité: 80
 ```
-
-
-## Configuration VirtualBox et Windows
 
 ## Mes conf
 
