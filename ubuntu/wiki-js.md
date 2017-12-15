@@ -48,6 +48,12 @@ Relancer la configuration et voir si l'étape du Git passe
 
 `node wiki configure`
 
+> Repository url
+> https://github.com/AnthonyRouinvy/wiki.git
+> Authentication choisir `Basic` avec mes identifiants Github
+> Cocher commit using user email
+
+
 Il y a un petit décalage entre le moment où l'on créé un article et celui où il est poussé. On peut voir sur Gitkraken que les fichiers sont en premier poussés en staging, puis après commités.
 
 ### Démarrer / arrêter
@@ -74,8 +80,4 @@ node wiki stop
 
 
 
-Repository url
-https://github.com/AnthonyRouinvy/wiki.git
-Authentication choisir `Basic` avec mes identifiants Github
-Cocher commit using user email
 
